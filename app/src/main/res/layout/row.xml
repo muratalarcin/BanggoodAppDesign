@@ -19,6 +19,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/twBaslik"
             android:layout_width="264dp"
             android:layout_height="wrap_content"
             android:text="10Pcs 2S 3A Li-on Lithium Battery 18650 Protection Charger Board BMS PCB Board"
@@ -26,6 +27,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/twFiyat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TRY378.82"
@@ -35,6 +37,7 @@
             android:textSize="20sp"/>
 
         <TextView
+            android:id="@+id/twEtiket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFE8DC"
@@ -51,6 +54,7 @@
             android:orientation="horizontal">
 
             <RatingBar
+                android:id="@+id/twRating"
                 style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,6 +62,7 @@
                 android:rating="5" />
 
             <TextView
+                android:id="@+id/twYorum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="114 Sold"
