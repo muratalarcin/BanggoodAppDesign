@@ -6,6 +6,8 @@ import java.io.Serializable;
 public class Urunler implements Serializable {
 
     private int urunId;
+
+    private String foto;
     private String baslik;
     private float fiyat;
     private boolean etiket;
@@ -15,8 +17,9 @@ public class Urunler implements Serializable {
     public Urunler() {
     }
 
-    public Urunler(int urunId, String baslik, float fiyat, boolean etiket, float rating, int yorum) {
+    public Urunler(int urunId, String foto, String baslik, float fiyat, boolean etiket, float rating, int yorum) {
         this.urunId = urunId;
+        this.foto = foto;
         this.baslik = baslik;
         this.fiyat = fiyat;
         this.etiket = etiket;
@@ -30,6 +33,14 @@ public class Urunler implements Serializable {
 
     public void setUrunId(int urunId) {
         this.urunId = urunId;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getBaslik() {

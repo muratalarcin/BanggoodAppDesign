@@ -44,6 +44,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.RowHolder> {
         RowBinding t = holder.tasarim;
 
         t.twBaslik.setText(urun.getBaslik());
+        t.twFiyat.setText("TRY" + urun.getFiyat());
+        t.twYorum.setText(urun.getYorum() + " Sold");
+        t.twEtiket.setText(urun.isEtiket() ? "Inclusive of duties" : null);
+        t.twRating.setRating(urun.getRating());
+
+        t.imageView.setImageResource(mContext.getResources()
+                .getIdentifier(urun.getFoto(), "drawable", mContext.getPackageName()));
     }
 
 
