@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listeFragment"
-        android:name="com.muratalarcin.banggoodappdesign.ui.ListeFragment"
+        android:name="com.muratalarcin.banggoodappdesign.ui.fragment.ListeFragment"
         android:label="fragment_liste"
         tools:layout="@layout/fragment_liste" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detayFragment"
-        android:name="com.muratalarcin.banggoodappdesign.ui.DetayFragment"
+        android:name="com.muratalarcin.banggoodappdesign.ui.fragment.DetayFragment"
         android:label="fragment_detay"
         tools:layout="@layout/fragment_detay" >
         <argument

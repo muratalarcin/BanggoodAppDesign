@@ -8,21 +8,23 @@ import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.muratalarcin.banggoodappdesign.R;
 import com.muratalarcin.banggoodappdesign.data.entity.Urunler;
 import com.muratalarcin.banggoodappdesign.databinding.RowBinding;
-import com.muratalarcin.banggoodappdesign.ui.ListeFragment;
-import com.muratalarcin.banggoodappdesign.ui.ListeFragmentDirections;
+
+import com.muratalarcin.banggoodappdesign.ui.fragment.ListeFragmentDirections;
+import com.muratalarcin.banggoodappdesign.ui.viewmodel.ListeViewModel;
 
 import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.RowHolder> {
     private List<Urunler> urunlerListesi;
     private Context mContext;
+    private ListeViewModel viewModel;
 
-    public ListAdapter(List<Urunler> urunlerListesi, Context mContext) {
+    public ListAdapter(List<Urunler> urunlerListesi, Context mContext, ListeViewModel viewModel) {
         this.urunlerListesi = urunlerListesi;
         this.mContext = mContext;
+        this.viewModel = viewModel;
     }
 
     public class RowHolder extends RecyclerView.ViewHolder {
