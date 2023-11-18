@@ -1,82 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:elevation="0.7dp"
-    android:layout_marginBottom="0.4dp"
-    android:padding="4dp"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:id="@+id/lineerLayout">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="140dp"
-        android:layout_height="130dp"
-        android:padding="8dp"
-        android:src="@drawable/item" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/twBaslik"
-            android:layout_width="264dp"
-            android:layout_height="wrap_content"
-            android:text="10Pcs 2S 3A Li-on Lithium Battery 18650 Protection Charger Board BMS PCB Board"
-            android:textColor="#8E8E8E"
-            android:textSize="13sp" />
-
-        <TextView
-            android:id="@+id/twFiyat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:fontFamily="sans-serif"
-            android:layout_marginBottom="3dp"
-            android:text="TRY378.82"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/twEtiket"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FFE8DC"
-            android:paddingStart="5dp"
-            android:paddingRight="5dp"
-            android:text="Inclusive of duties"
-            android:textColor="#FF7632"
-            android:textSize="9sp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="0.5dp"
+            android:layout_marginBottom="0.3dp"
+            android:padding="4dp"
             android:orientation="horizontal">
 
-            <RatingBar
-                android:id="@+id/twRating"
-                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleX="0.8"
-                android:scaleY="0.8"
-                android:progressTint="#FF6F26"
-                android:rating="5" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:layout_height="138dp"
+                android:padding="8dp"
+                android:src="@drawable/item" />
 
-            <TextView
-                android:id="@+id/twYorum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="114 Sold"
-                android:layout_marginTop="2dp"
-                android:textSize="10dp"
-                android:textColor="#B2B2B2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/twBaslik"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:text="10Pcs 2S 3A Li-on Lithium Battery 18650 Protection Charger Board BMS PCB Board"
+                    android:textColor="#8E8E8E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/twFiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="43dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="3dp"
+                    android:text="TRY378.82"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/twEtiket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFE8DC"
+                    android:paddingStart="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Inclusive of duties"
+                    android:textColor="#FF7632"
+                    android:textSize="9sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/twRating"
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:progressTint="#FF6F26"
+                        android:rating="5" />
+
+                    <TextView
+                        android:id="@+id/twYorum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="114 Sold"
+                        android:layout_marginTop="2dp"
+                        android:textSize="10dp"
+                        android:textColor="#B2B2B2"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

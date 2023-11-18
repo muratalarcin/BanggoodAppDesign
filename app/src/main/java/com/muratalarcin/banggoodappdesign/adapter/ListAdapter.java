@@ -5,10 +5,14 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.muratalarcin.banggoodappdesign.R;
 import com.muratalarcin.banggoodappdesign.data.entity.Urunler;
 import com.muratalarcin.banggoodappdesign.databinding.RowBinding;
+import com.muratalarcin.banggoodappdesign.ui.ListeFragment;
+import com.muratalarcin.banggoodappdesign.ui.ListeFragmentDirections;
 
 import java.util.List;
 
@@ -51,6 +55,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.RowHolder> {
 
         t.imageView.setImageResource(mContext.getResources()
                 .getIdentifier(urun.getFoto(), "drawable", mContext.getPackageName()));
+
+        t.cardView.setOnClickListener(view -> {
+            ListeFragmentDirections.DetayGecis gecis = ListeFragmentDirections.detayGecis(urun);
+            Navigation.findNavController(view).navigate(gecis);
+        });
     }
 
 
