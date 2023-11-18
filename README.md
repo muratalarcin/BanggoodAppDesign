@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align = center />
-  Original / My Design
+  <-- Original / My Design -->
 </h3>
 
 <div style="display: flex; justify-content: center;">
