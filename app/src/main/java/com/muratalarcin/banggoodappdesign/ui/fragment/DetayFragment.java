@@ -3,6 +3,7 @@ package com.muratalarcin.banggoodappdesign.ui.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +29,10 @@ public class DetayFragment extends Fragment {
         binding.imageView.setImageResource(getResources().getIdentifier(
                 urun.getFoto(), "drawable", requireContext().getPackageName()
         ));
+
+        binding.floatingActionButton2.setOnClickListener(view -> {
+            Navigation.findNavController(view).navigate(R.id.bottomSheet_Gecis);
+        });
 
         return binding.getRoot();
     }

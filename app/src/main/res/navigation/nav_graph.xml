@@ -22,5 +22,13 @@
         <argument
             android:name="urun"
             app:argType="com.muratalarcin.banggoodappdesign.data.entity.Urunler" />
+        <action
+            android:id="@+id/bottomSheet_Gecis"
+            app:destination="@id/bottomSheetFragment2" />
     </fragment>
+    <dialog
+        android:id="@+id/bottomSheetFragment2"
+        android:name="com.muratalarcin.banggoodappdesign.ui.fragment.BottomSheetFragment"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
 </navigation>
