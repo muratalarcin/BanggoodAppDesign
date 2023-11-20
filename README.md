@@ -8,5 +8,5 @@
 
 <div style="display: flex; justify-content: center;">
   <img src="https://github.com/muratalarcin/BanggoodAppDesign/blob/master/Screenshot_1700312903.png" width="400" height="auto" style="margin: 10px;">
-  <img src="https://github.com/muratalarcin/BanggoodAppDesign/blob/master/Screenshot_1700313518.png" width="400" height="auto" style="margin: 10px;">
+  <img src="https://github.com/muratalarcin/BanggoodAppDesign/blob/master/Screenshot_1700321124.png" width="400" height="auto" style="margin: 10px;">
 </div>
